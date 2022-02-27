@@ -2,7 +2,7 @@
 
 > 基于 OpenCore0.7.8 的 X570 主机黑苹果配置分享。
 
-- 官方教程：https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
+* 官方教程：https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
 ![Overview](./Assets/overview.png)
 
@@ -19,7 +19,7 @@ BIOS：[Version 4021](https://www.asus.com/Motherboards-Components/Motherboards/
 
 ## 其他说明
 
-平台信息请按照教程[PlatformInfo](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#platforminfo)，自行修改。也就是下面这部分：
+平台信息请按照教程[PlatformInfo](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#platforminfo)，自行修改，建议使用`iMacPro1,1`。也就是下面这部分：
 
 ```
 <key>PlatformInfo</key>
@@ -45,7 +45,7 @@ BIOS：[Version 4021](https://www.asus.com/Motherboards-Components/Motherboards/
     <key>SystemMemoryStatus</key>
     <string>Auto</string>
     <key>SystemProductName</key>
-    <string>iMac19,1</string>
+    <string>iMacPro1,1</string>
     <key>SystemSerialNumber</key>
     <string>W00000000001</string>
     <key>SystemUUID</key>
@@ -68,10 +68,10 @@ BIOS：[Version 4021](https://www.asus.com/Motherboards-Components/Motherboards/
 
 ![iCloud](./Assets/iCloud.png)
 
-- 当前分支`main`使用的是 release 版本的 opencore。
-- 当前系统 `macOS Big Sur 11.5.2 (20G95)`，一直都是 OTA 升级，就目前来看没什么问题。
-- 如果有内置硬盘被识别外置，请在`DeviceProperties`内的添加对应的`Device Path`，通过 hackintool 查看。我的 config 文件中添加了两个，作为示例。
-- 如果你没有免驱 AMD 显卡，用的是 1070Ti，之前最高只支持 10xx 系列，只能安装 10.13.x，可参考我以前写的博文[AMD 黑苹果小记（Prime X570 Pro + Ryzen 3700X + 1070 Ti）](https://www.whidy.net/amd-hackintosh-note-with-asus-prime-x570-pro-ryzen-3700x-nvidia-1070ti)。
+* 当前分支`main`使用的是 release 版本的 opencore。请先使用另一分支的`debug`版本进行测试。
+* 当前系统 `macOS Big Sur 11.5.2 (20G95)`，一直都是 OTA 升级，就目前来看没什么问题。
+* 如果有内置硬盘被识别外置，请在`DeviceProperties`内的添加对应的`Device Path`，通过 hackintool 查看。我的 config 文件中添加了两个，作为示例。
+* 如果你没有免驱 AMD 显卡，用的是 1070Ti，之前最高只支持 10xx 系列，只能安装 10.13.x，可参考我以前写的博文[AMD 黑苹果小记（Prime X570 Pro + Ryzen 3700X + 1070 Ti）](https://www.whidy.net/amd-hackintosh-note-with-asus-prime-x570-pro-ryzen-3700x-nvidia-1070ti)。
 
 有其他问题可以提 issues，有空我会看看~
 
@@ -81,7 +81,7 @@ BIOS：[Version 4021](https://www.asus.com/Motherboards-Components/Motherboards/
 
 ### 2022 年 02 月 26 日
 
-- 更新到 Opencore0.7.8
-- ResizeGpuBars 启用，需要 BIOS 配合
-- Hackintosh 的版本检测错误则需要 reset nvram
-- 硬盘如果被识别为外置，需要在`DeviceProperties`进行添加
+* 更新到 Opencore0.7.8
+* ResizeGpuBars 启用，需要 BIOS 配合
+* Hackintosh 的版本检测错误则需要 reset nvram
+* 硬盘如果被识别为外置，需要在`DeviceProperties`进行添加
