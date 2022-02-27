@@ -8,10 +8,12 @@
 
 ## 电脑配置
 
-主板：[华硕（ASUS）PRIME X570-PRO 主板](https://www.asus.com/Motherboards-Components/Motherboards/All-series/PRIME-X570-PRO/)
-CPU：AMD 锐龙 7 3700X
-显卡：[华硕（ASUS）TUF Gaming 3 AMD Radeon RX 5600XT](https://www.asus.com/Motherboards-Components/Graphics-Cards/All-series/TUF-3-RX5600XT-O6G-EVO-GAMING/)
-SSD：Toshiba Q200EX（480G）
+
+* 主板：[华硕（ASUS）PRIME X570-PRO 主板](https://www.asus.com/Motherboards-Components/Motherboards/All-series/PRIME-X570-PRO/)
+* CPU：AMD 锐龙 7 3700X
+* 显卡：[华硕（ASUS）TUF Gaming 3 AMD Radeon RX 5600XT](https://www.asus.com/Motherboards-Components/Graphics-Cards/All-series/TUF-3-RX5600XT-O6G-EVO-GAMING/)
+* SSD：Toshiba Q200EX（480G）
+
 
 **没有单独安装无线网卡，仅能使用有线，目前 Monterey 不支持有线网卡，故不做升级**
 
