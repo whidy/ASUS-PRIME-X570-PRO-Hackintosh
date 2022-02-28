@@ -85,5 +85,5 @@ BIOS：[Version 4021](https://www.asus.com/Motherboards-Components/Motherboards/
 
 * 更新到 Opencore0.7.8
 * ResizeGpuBars 启用，需要 BIOS 配合
-* Hackintosh 的版本检测错误则需要 reset nvram
+* 升级后 `Hackintool` 内的引导工具版本检测错误则需要 reset nvram
 * 硬盘如果被识别为外置，需要在`DeviceProperties`进行添加
