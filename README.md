@@ -11,6 +11,7 @@
 * 主板：[华硕（ASUS）PRIME X570-PRO 主板](https://www.asus.com/Motherboards-Components/Motherboards/All-series/PRIME-X570-PRO/)
 * CPU：AMD 锐龙9 5900X
 * 显卡：[华硕（ASUS）TUF Gaming 3 AMD Radeon RX 5600XT](https://www.asus.com/Motherboards-Components/Graphics-Cards/All-series/TUF-3-RX5600XT-O6G-EVO-GAMING/)
+* WIFI：AX210（PCIE）
 * SSD：Toshiba Q200EX（480G）
 
 BIOS：[Version 4204](https://www.asus.com/Motherboards-Components/Motherboards/All-series/PRIME-X570-PRO/HelpDesk_BIOS/)，更新于 `2022/03/07` 。
