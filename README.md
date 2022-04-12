@@ -1,5 +1,3 @@
-# prime-x570-pro-hackintosh
-
 > 基于 OpenCore0.7.9 的 X570 主机黑苹果配置分享。
 
 * 官方教程：https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
