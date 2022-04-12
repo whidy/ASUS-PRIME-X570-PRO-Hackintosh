@@ -12,7 +12,7 @@
 * CPU：AMD 锐龙9 5900X
 * 显卡：[华硕（ASUS）TUF Gaming 3 AMD Radeon RX 5600XT](https://www.asus.com/Motherboards-Components/Graphics-Cards/All-series/TUF-3-RX5600XT-O6G-EVO-GAMING/)
 * WIFI：AX210（PCIE）
-* SSD：Toshiba Q200EX（480G）
+* 西部数码 SN750（512G）
 
 BIOS：[Version 4204](https://www.asus.com/Motherboards-Components/Motherboards/All-series/PRIME-X570-PRO/HelpDesk_BIOS/)，更新于 `2022/03/07` 。
 
@@ -63,14 +63,18 @@ BIOS：[Version 4204](https://www.asus.com/Motherboards-Components/Motherboards/
 </dict>
 ```
 
-修改好后可以正常登录，同步。
-
-![iCloud](./Assets/iCloud.png)
+修改好后可以正常登录，同步iCloud。
 
 * 当前分支`monterey-5900x-0.7.9`使用的是 debug 版本的 opencore。后期完成调试将转换为release。
-* 当前系统 `macOS Monterey 12.x`。
+* 当前系统 `macOS Monterey 12.3.1`。
 * 如果有内置硬盘被识别外置，请在`DeviceProperties`内的添加对应的`Device Path`，通过 hackintool 查看。我的 config 文件中添加了两个，作为示例。
 * 如果CPU不同请参考[Kernel patches](https://github.com/AMD-OSX/AMD_Vanilla/tree/master)
 * 如果你没有免驱 AMD 显卡，用的是 1070Ti，之前最高只支持 10xx 系列，只能安装 10.13.x，可参考我以前写的博文[AMD 黑苹果小记（Prime X570 Pro + Ryzen 3700X + 1070 Ti）](https://www.whidy.net/amd-hackintosh-note-with-asus-prime-x570-pro-ryzen-3700x-nvidia-1070ti)。
+* 本次相对[opencore 0.7.8的Big Sur配置](https://github.com/whidy/ASUS-PRIME-X570-PRO-Hackintosh/releases/tag/opencore-0.7.8-for-big-sur-v1.0.0)添加了amd的CPU工具包。
+
+## 特别说明
+
+* 安装系统时，无线网络似乎不起作用，所以还是需要有线网络安装及系统配置。
+* 目前AX210在Monterey下无解，我在远景发了个帖子并保持追踪：[AX210蓝牙目前应该是无解的【2022年04月11日】](https://bbs.pcbeta.com/viewthread-1927546-1-2.html)
 
 有其他问题可以提 issues，有空我会看看~
