@@ -63,7 +63,7 @@ BIOS：[Version 4204](https://www.asus.com/Motherboards-Components/Motherboards/
 
 修改好后可以正常登录，同步iCloud。
 
-* 当前分支`monterey-5900x-0.7.9`使用的是 debug 版本的 opencore。后期完成调试将转换为release。
+* 当前分支`monterey-5900x-0.7.9`使用的是 debug 版本的 opencore。
 * 当前系统 `macOS Monterey 12.3.1`。
 * 如果有内置硬盘被识别外置，请在`DeviceProperties`内的添加对应的`Device Path`，通过 hackintool 查看。我的 config 文件中添加了两个，作为示例。
 * 如果CPU不同请参考[Kernel patches](https://github.com/AMD-OSX/AMD_Vanilla/tree/master)
@@ -72,7 +72,11 @@ BIOS：[Version 4204](https://www.asus.com/Motherboards-Components/Motherboards/
 
 ## 特别说明
 
+> 目前不能工作的仅有蓝牙功能，因为AX210在Monterey下支持还没找到方案，如果使用有线网络，是非常完美的。
+
 * 安装系统时，无线网络似乎不起作用，所以还是需要有线网络安装及系统配置。
 * 目前AX210在Monterey下无解，我在远景发了个帖子并保持追踪：[AX210蓝牙目前应该是无解的【2022年04月11日】](https://bbs.pcbeta.com/viewthread-1927546-1-2.html)
+* 如果配置大体相同的情况下，你基本上只需要更换 `PlatformInfo` 的内容就可以了，但是如果还是无法进入安装界面，是不是你的BIOS设置没有做好呢？再来看看[AMD BIOS Settings](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#amd-bios-settings)仔细对比下吧~
+* 暂时不专门更新一个release版本的opencore了，因为将debug版本更换为release版本很容易，去下载release版的包，并替换掉debug版的 `*.efi` （直接覆盖就行），再去根据文档[Disabling all logging](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html#config-changes)来修改 `config.plist` 几个地方就好了，还有 `boot-args` 根据需要修改。当然你自己更换release前，必定是确认debug版本没有问题啦。
 
-有其他问题可以提 issues，有空我会看看~
+如果确认都没有什么操作上的问题，还是不行，可以提 issues，有空我会看看~
