@@ -63,7 +63,7 @@ BIOS：[Version 4403](https://www.asus.com/Motherboards-Components/Motherboards/
 
 修改好后可以正常登录，同步 iCloud。
 
-* 当前分支 `monterey-5900x-0.8.1` 使用的是 debug 版本的 opencore（**基于 `monterey-5900x-0.7.9` 升级**）；
+* 当前分支 `main` 使用的是 debug 版本的 opencore（**基于 [`monterey-5900x-0.7.9`](https://github.com/whidy/ASUS-PRIME-X570-PRO-Hackintosh/tree/monterey-5900x-0.7.9) 升级**）；
 * 当前系统 `macOS Monterey 12.4` ；
 * 已经升级了最新的 `AMD Patch` ；
 
