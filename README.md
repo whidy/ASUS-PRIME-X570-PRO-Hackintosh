@@ -1,8 +1,8 @@
-> 基于 OpenCore0.8.1 的 X570 主机黑苹果配置分享，或许支持macOS 13，但未验证。
+> 基于 OpenCore0.8.5 的 X570 主机黑苹果配置分享，或许支持macOS 13，但未验证。
 
 * 官方教程：https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
-![Overview](./Assets/overview-12.4.png)
+![Overview](./Assets/overview-12.6-bt.png)
 
 ## 电脑配置
 
@@ -63,16 +63,13 @@ BIOS：[Version 4403](https://www.asus.com/Motherboards-Components/Motherboards/
 
 修改好后可以正常登录，同步 iCloud。
 
-* 当前分支 `main` 使用的是 debug 版本的 opencore（**基于 [`monterey-5900x-0.7.9`](https://github.com/whidy/ASUS-PRIME-X570-PRO-Hackintosh/tree/monterey-5900x-0.7.9) 升级**）；
-* 当前系统 `macOS Monterey 12.4` ；
+* 当前分支 `main` 使用的是 **release** 版本的 opencore（基于自用0.8.1升级）0.8.5；
+* 当前系统 `macOS Monterey 12.6` ；
 * 已经升级了最新的 `AMD Patch` ；
+* 已经能够支持AX210的蓝牙，功能正常，**但是，目前测试情况耳机蓝牙连接极不稳定，鼠标良好**。详情：[AX210蓝牙终于可以正常使用了【2022年10月25日】](https://bbs.pcbeta.com/viewthread-1927546-1-2.html)
 
 ## 特别说明
 
-> 目前不能工作的仅有蓝牙功能，因为 AX210 在 Monterey 下支持还没找到方案，如果使用有线网络，是非常完美的。
-
-* 安装系统时，无线网络似乎不起作用，所以还是需要有线网络安装及系统配置。
-* 目前 AX210 在 Monterey 下无解，我在远景发了个帖子并保持追踪：[AX210 蓝牙目前应该是无解的【2022 年 04 月 11 日】](https://bbs.pcbeta.com/viewthread-1927546-1-2.html)
 * 如果配置大体相同的情况下，你基本上只需要更换 `PlatformInfo` 的内容就可以了，但是如果还是无法进入安装界面，是不是你的 BIOS 设置没有做好呢？再来看看[AMD BIOS Settings](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#amd-bios-settings)仔细对比下吧~
 * 暂时不专门更新一个 release 版本的 opencore 了，因为将 debug 版本更换为 release 版本很容易，去下载 release 版的包，并替换掉 debug 版的 `*.efi` （直接覆盖就行），再去根据文档[Disabling all logging](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html#config-changes)来修改 `config.plist` 几个地方就好了，还有 `boot-args` 根据需要修改。当然你自己更换 release 前，必定是确认 debug 版本没有问题啦。
 
